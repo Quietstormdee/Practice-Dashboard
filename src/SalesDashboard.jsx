@@ -142,9 +142,9 @@ function LineChart({ data, selectedRegion, width = 640, height = 300 }) {
   const ref = useRef(null);
   const [hover, setHover] = useState(null);
 
-  const regionsToShow = selectedRegion ? [selectedRegion] : REGIONS;
-
   useEffect(() => {
+    const regionsToShow = selectedRegion ? [selectedRegion] : REGIONS;
+
     const margin = { top: 20, right: 24, bottom: 36, left: 48 };
     const innerW = width - margin.left - margin.right;
     const innerH = height - margin.top - margin.bottom;
@@ -223,7 +223,7 @@ function LineChart({ data, selectedRegion, width = 640, height = 300 }) {
       .attr("font-size", 11)
       .attr("fill", "currentColor")
       .attr("opacity", 0.7);
-  }, [data, selectedRegion, regionsToShow, width, height]);
+  }, [data, selectedRegion, width, height]);
 
   return (
     <div style={{ position: "relative" }}>
