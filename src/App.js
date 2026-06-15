@@ -1,7 +1,7 @@
-import SalesDashboard from './SalesDashboard.jsx';
+import AssetsDashboard from './AssetsDashboard.jsx';
 
 function App() {
-  return <SalesDashboard />;
+  return <AssetsDashboard />;
 }
 
 export default App;
